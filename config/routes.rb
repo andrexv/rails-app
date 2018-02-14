@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  resources :resource_jobs, only: :create 
+  resources :jobs, only: :create 
 end
