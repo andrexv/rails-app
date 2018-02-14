@@ -1,6 +1,6 @@
 class Job < ApplicationRecord
 
   def self.send_mail
-    JobMailer.created
+    JobMailer.created.deliver
   end
 end
