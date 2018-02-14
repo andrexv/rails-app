@@ -1,7 +1,7 @@
 class JobsController < ApplicationController
 
   def create
-    Job.send_mail
+    EmailJob.perform_later
 
     respond_to do |format|
       format.json { render json: {}, status: :ok }
